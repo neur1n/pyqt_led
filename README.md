@@ -1,5 +1,5 @@
 # pyqt_led
-Simple LED widget for PyQt5. (NOT AVAILABLE YET.)
+Simple LED widget for PyQt5.
 
 ![screenshot](./screenshots/on.png)
 ![screenshot](./screenshots/off.png)
