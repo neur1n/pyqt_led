@@ -90,6 +90,8 @@ class Led(QPushButton):
         self._height = height
         if self._shape == Led.circle:
             QPushButton.setFixedSize(self, height, height)
+        else:
+            QPushButton.setFixedSize(self, width, height)
 
     # ============================================================== Properties
     @property
