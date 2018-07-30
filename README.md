@@ -1,11 +1,10 @@
 # pyqt_led
 Simple LED widget for PyQt5.
 
-![screenshot](./screenshots/on.png)
-![screenshot](./screenshots/off.png)
+![on](./screenshots/on.png)
+![off](./screenshots/off.png)
 
 ## Table of Contents
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -13,7 +12,7 @@ Simple LED widget for PyQt5.
 ## Installation
 ### pip
 ```
-$ pip install pyqt_led
+$ pip install pyqt-led
 ```
 
 ### setup.py
