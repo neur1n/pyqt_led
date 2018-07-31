@@ -27,6 +27,7 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QGridLayout
 from PyQt5.QtWidgets import QWidget
+from pyqt_led import Led
 import numpy as np
 import sys
 

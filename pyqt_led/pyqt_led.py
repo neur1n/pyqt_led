@@ -26,8 +26,13 @@ class Led(QPushButton):
     rectangle = 3
 
     def __init__(self, parent, on_color=green, off_color=black,
-                 shape=rectangle):
+                 shape=rectangle, build='release'):
         super().__init__()
+        if build == 'release':
+            self.setDisabled(True)
+        else:  # For example 'debug'
+            self.setEnabled(True)
+
         self._qss = 'QPushButton {{ \
                                    border: 3px solid lightgray; \
                                    border-radius: {}px; \
@@ -220,8 +225,8 @@ if __name__ == '__main__':
         def _create_leds(self):
             for s in self._shape:
                 for c in self._color:
-                    exec('self._{}_{} = Led(self, on_color=Led.{}, shape=Led.{})'
-                         .format(s, c, c, s))
+                    exec('self._{}_{} = Led(self, on_color=Led.{}, \
+                          shape=Led.{}, build="debug")'.format(s, c, c, s))
                     exec('self._{}_{}.setFocusPolicy(Qt.NoFocus)'.format(s, c))
 
         def _arrange_leds(self):

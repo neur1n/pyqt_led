@@ -20,12 +20,15 @@ class Test(QWidget):
             self.close()
 
     def _create_leds(self):
-        self._led_1 = Led(self)
-        self._led_2 = Led(self, on_color=Led.blue, shape=Led.capsule)
-        self._led_3 = Led(self, off_color=Led.red, shape=Led.circle)
-        self._led_4 = Led(self, shape=Led.rectangle)
+        self._led_1 = Led(self, build='debug')
+        self._led_2 = Led(self, on_color=Led.blue, shape=Led.capsule,
+                          build='debug')
+        self._led_3 = Led(self, off_color=Led.red, shape=Led.circle,
+                          build='debug')
+        self._led_4 = Led(self, shape=Led.rectangle, build='debug')
         self._led_4.set_on_color(Led.orange)
-        self._led_5 = Led(self, on_color=Led.purple, off_color=Led.yellow)
+        self._led_5 = Led(self, on_color=Led.purple, off_color=Led.yellow,
+                          build='debug')
         self._led_5.set_shape(Led.circle)
         self._led_5.setFixedSize(80, 50)
 
