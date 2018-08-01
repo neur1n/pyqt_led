@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(name='pyqt_led',
-      version='0.0.3',
+      version='0.0.4',
       description='Simple LED widget for PyQt5',
       long_description=long_description,
       long_description_content_type='text/markdown',

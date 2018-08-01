@@ -200,6 +200,18 @@ class Led(QPushButton):
         else:
             self._toggle_off()
 
+    def turn_on(self, status=True):
+        self.set_status(status)
+
+    def turn_off(self, status=False):
+        self.set_status(status)
+
+    def is_on(self):
+        return True if self._status is True else False
+
+    def is_off(self):
+        return True if self._status is False else False
+
 
 if __name__ == '__main__':
     from PyQt5.QtCore import Qt
