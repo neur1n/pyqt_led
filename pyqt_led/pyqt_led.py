@@ -83,7 +83,7 @@ class Led(QPushButton):
         elif self._shape == Led.rectangle:
             base_w = 40
             base_h = 30
-        width = int(base_w * res_w/1920)
+        width = int(base_w * res_h/1080)
         height = int(base_h * res_h/1080)
         return QSize(width, height)
 
