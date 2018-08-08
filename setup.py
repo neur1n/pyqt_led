@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(name='pyqt_led',
-      version='0.0.5',
+      version='0.0.6',
       description='Simple LED widget for PyQt5',
       long_description=long_description,
       long_description_content_type='text/markdown',
@@ -15,5 +15,5 @@ setup(name='pyqt_led',
       author_email='Jihang.Li@outlook.com',
       license='MIT',
       packages=['pyqt_led'],
-      install_requires=['numpy'],
+      install_requires=['numpy', 'pyautogui'],
       zip_safe=False)
